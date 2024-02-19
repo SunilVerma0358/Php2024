@@ -5,7 +5,7 @@ const CHICAGOIL = () => {
     <>
       <div
         id="Speackers"
-        className="max-w-[1320px] px-3 mx-auto py-[60px] sm:pt-20 md:pt-32 sm:pb-[100px] md:pb-[166px] "
+        className="max-w-[1320px] px-3 mx-auto py-[60px] sm:pt-20 md:pt-32 sm:pb-[60px] "
       >
         <h2 className=" font-Poppins font-black text-[40px] sm:text-[50px] md:text-[60px] text-[#F59330] leading-[60px] sm:leading-[75px] md:leading-90px] text-center">
           MAY 16-18 – CHICAGO, IL
