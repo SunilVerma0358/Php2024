@@ -8,11 +8,14 @@ import HeroRightBottomEllipse from "../assets/image/heroBottomEllpise.png";
 import HeroMainImg from "../assets/image/HeroMainImg.png";
 const HeroSection = () => {
   return (
-    <div className="relative z-[4] overflow-hidden">
+    <div className="relative z-[4] overflow-x-clip">
       <>
         <PhpNav />
       </>
-      <div className="max-w-[1320px] xl:max-w-[1614px] mx-auto px-6 sm:px-3 container  pt-12 pb-12">
+      <div
+        id="Sehedule"
+        className="max-w-[1320px] xl:max-w-[1614px] mx-auto px-6 sm:px-3 container  pt-12 pb-12"
+      >
         <div className="relative cursor-pointer">
           <img
             className="w-full rounded-[10px] lg:rounded-[106px] min-h-[521px] object-cover "
@@ -41,7 +44,7 @@ const HeroSection = () => {
           alt="HeroTopLeftEllipse"
         />
       </div>
-      <div className="w-[370px] lg:w-[500px] xl:w-[800px] 2xl:w-[1100px] absolute bottom-0 left-[-50%] md:left-0">
+      <div className="w-[370px] lg:w-[500px] xl:w-[800px] 2xl:w-[1100px] absolute bottom-0 left-[-50%] sm:left-[-20%] md:left-0">
         <img
           className="w-full"
           src={HeroBottomLeftEllipse}

@@ -30,38 +30,42 @@ const PhpNav = () => {
             <ul className="flex items-center gap-8 xl:gap-[72px] flex-col lg:flex-row">
               <li>
                 <a
-                  href="#!"
-                  className=" font-Poppins font-normal  text-xl xl:text-2xl leading-[36px]"
+                  onClick={setopen}
+                  href="#Sehedule"
+                  className=" font-Poppins font-normal  text-xl xl:text-2xl leading-[36px] relative after:absolute after:w-0 after:h-[3px] after:left-[50%] after:bottom-[-3.5px] after:rounded-[6px] after:bg-black hover:after:w-full hover:after:left-0 after:duration-300 "
                 >
                   SEHEDULE
                 </a>
               </li>
               <li>
                 <a
-                  href="#!"
-                  className=" font-Poppins font-normal  text-xl xl:text-2xl leading-[36px]"
+                  href="#Speackers"
+                  onClick={setopen}
+                  className=" font-Poppins font-normal  text-xl xl:text-2xl leading-[36px] relative after:absolute after:w-0 after:h-[3px] after:left-[50%] after:bottom-[-3.5px] after:rounded-[6px] after:bg-black hover:after:w-full hover:after:left-0 after:duration-300 "
                 >
                   SPEAKERS
                 </a>
               </li>
               <li>
                 <a
-                  href="#!"
-                  className=" font-Poppins font-normal  text-xl xl:text-2xl leading-[36px]"
+                  href="#Sponsors"
+                  onClick={setopen}
+                  className=" font-Poppins font-normal  text-xl xl:text-2xl leading-[36px] relative after:absolute after:w-0 after:h-[3px] after:left-[50%] after:bottom-[-3.5px] after:rounded-[6px] after:bg-black hover:after:w-full hover:after:left-0 after:duration-300 "
                 >
                   SPONSORS
                 </a>
               </li>
               <li>
                 <a
-                  href="#!"
-                  className=" font-Poppins font-normal  text-xl xl:text-2xl leading-[36px]"
+                  href="#Venue"
+                  onClick={setopen}
+                  className=" font-Poppins font-normal  text-xl xl:text-2xl leading-[36px] relative after:absolute after:w-0 after:h-[3px] after:left-[50%] after:bottom-[-3.5px] after:rounded-[6px] after:bg-black hover:after:w-full hover:after:left-0 after:duration-300 "
                 >
                   VENUE
                 </a>
               </li>
             </ul>
-            <button className=" font-Poppins font-normal  text-xl xl:text-2xl text-white leading-[36px] bg-[#EE612F] rounded-[30px] py-[15px] px-[63.5px] ">
+            <button className=" font-Poppins font-normal  text-xl xl:text-2xl text-white leading-[36px] bg-[#EE612F] rounded-[30px] py-[15px] px-[63.5px] border-[2px] border-transparent hover:text-black hover:bg-white hover:border-black duration-700 common_btn2 ">
               REGISTER NOW
             </button>{" "}
           </div>

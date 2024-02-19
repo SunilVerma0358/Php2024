@@ -6,26 +6,31 @@ import AboutSectionThreeImg from "../assets/image/AboutSectionSecond.png";
 import AboutSectionFourImg from "../assets/image/AboutThreeImg.png";
 import AboutSectionFiveImg from "../assets/image/aboutSectionFour.png";
 import AboutSectionSixImg from "../assets/image/AboutSectionFive.png";
+import AboutSectionSmallImg from "../assets/image/blueT-shirtMen.png";
+import AboutSectionShirtman from "../assets/image/ShirtMan.png";
+import AboutSectionRedTshirt from "../assets/image/RedT-shirtMen.png";
+import AboutSectionAboutMen from "../assets/image/AboutMenImg.png";
 const About = () => {
   const settings = {
-    dots: true,
-    infinite: true,
-    // autoplay: true,
-    // speed: 2000,
-    // autoplaySpeed: 2000,
-    // cssEase: "linear",
-    // pauseOnHover: true,
+    dots: false,
+    infinite: false,
     arrows: false,
     slidesToShow: 5,
     slidesToScroll: 5,
     responsive: [
       {
+        breakpoint: 1680,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+        },
+      },
+      {
         breakpoint: 1536,
         settings: {
-          slidesToShow: 5,
+          slidesToShow: 4,
           slidesToScroll: 1,
           infinite: true,
-          dots: true,
         },
       },
       {
@@ -34,24 +39,40 @@ const About = () => {
           slidesToShow: 3,
           slidesToScroll: 1,
           infinite: true,
-          dots: true,
         },
       },
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 2.4,
           slidesToScroll: 1,
           infinite: true,
-          dots: true,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2.4,
+          slidesToScroll: 1,
+          infinite: true,
         },
       },
       {
         breakpoint: 600,
         settings: {
+          slidesToShow: 1.4,
+          slidesToScroll: 1,
+          dot: true,
+          infinite: true,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          initialSlide: 2,
+          dots: true,
+          infinite: true,
         },
       },
     ],
@@ -59,7 +80,10 @@ const About = () => {
 
   return (
     <>
-      <div className="max-w-[1320px] 2xl:max-w-[1536] px-3 mx-auto container pt-11 sm:pt-16 md:pt-24 lg:pt-32">
+      <div
+        id="Venue"
+        className="max-w-[1320px] 2xl:max-w-[1536] px-3 mx-auto container pt-11 sm:pt-16 md:pt-24 lg:pt-32"
+      >
         <h2 className=" font-Poppins font-black text-[40px] sm:text-5xl md:text-[60px] text-[#F59330] leading-[60px] sm:leading-[75px] md:leading-[90px] text-center">
           ABOUT PHP[TEK]
         </h2>
@@ -72,10 +96,14 @@ const About = () => {
           a range of topics.
         </p>
       </div>
-      <div className=" hidden md:block pt-[160px] ">
+      <div className="pt-[160px] hidden  md:block ">
         <Slider {...settings}>
-          <div className="max-w-[380px] h-[620px]">
-            <img src={AboutSectionImg} alt="AboutSection" />
+          <div className="max-w-[380px] h-[620px] object-cover">
+            <img
+              className="w-full h-full"
+              src={AboutSectionImg}
+              alt="AboutSection"
+            />
           </div>
           <div className="max-w-[380px] h-[620px] ">
             <img
@@ -103,46 +131,47 @@ const About = () => {
               alt="AboutSection"
             />
             <img
-              className="max-w-[523px]  object-cover h-[307px] pt-[5px] "
+              className="w-full  object-cover h-[307px] pt-[5px] "
               src={AboutSectionThreeImg}
               alt="AboutSection"
             />
           </div>
-        </Slider>
-      </div>
-      <div className=" pt-[160px] md:hidden ">
-        <Slider {...settings}>
-          <div className="max-w-[380px] h-[620px] object-cover">
-            <img src={AboutSectionImg} alt="AboutSection" />
-          </div>
-          <div className="max-w-[380px] h-[620px] px-3 ">
-            <img
-              className="w-full h-[307px]  object-cover"
-              src={AboutSectionTwoImg}
-              alt="AboutSection"
-            />
-            <img
-              className="w-full h-[307px] pt-[5px]  object-cover  "
-              src={AboutSectionFourImg}
-              alt="AboutSection"
-            />
-          </div>
-          <div className="max-w-[621px] max-h-[616px] px-3">
+          <div className="max-w-[621px] max-h-[616px]">
             <img
               className="w-full h-[616px]  object-cover"
               src={AboutSectionFiveImg}
               alt="AboutSection"
             />
           </div>
-          <div className="max-w-[523px] max-h-[620px] px-3">
+        </Slider>
+      </div>
+      <div className="pt-[80px] md:hidden px-[23px] ">
+        <Slider {...settings}>
+          <div className="object-cover">
             <img
-              className="w-full h-[307px]  object-cover"
-              src={AboutSectionSixImg}
+              className="w-full h-full"
+              src={AboutSectionSmallImg}
               alt="AboutSection"
             />
+          </div>
+          <div className="object-cover">
             <img
-              className="max-w-[523px]  object-cover h-[307px] pt-[5px] "
-              src={AboutSectionThreeImg}
+              className="w-full h-full"
+              src={AboutSectionShirtman}
+              alt="AboutSection"
+            />
+          </div>
+          <div className="object-cover">
+            <img
+              className="w-full h-full"
+              src={AboutSectionRedTshirt}
+              alt="AboutSection"
+            />
+          </div>
+          <div className="object-cover">
+            <img
+              className="w-full h-full"
+              src={AboutSectionAboutMen}
               alt="AboutSection"
             />
           </div>

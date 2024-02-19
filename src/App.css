@@ -1,10 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-.bg {
-    background-image: url(../src/assets/image/SmartObject.png);
+* {
+    scroll-behavior: smooth;
 }
 
 @media (max-width:1023px) {
     .overflow {
         overflow: hidden;
+    }
+}
+
+.slick-slide {
+    padding-left: 4px !important;
+    padding-right: 4px !important;
+}
+
+.slick-dots li.slick-active button:before {
+    background-color: #F59330;
+    border: 1px solid transparent !important;
+    opacity: 100 !important;
+}
+
+.slick-dots li button:before {
+    opacity: 100 !important;
+    width: 14px !important;
+    height: 14px !important;
+    content: '' !important;
+    border: 1px solid #b7b7b7 !important;
+    border-radius: 50% !important;
+}
+
+.common_btn:hover {
+    animation: pulsegardiant 1s linear;
+    box-shadow: 0 0 0 0.7em transparent;
+}
+
+@keyframes pulsegardiant {
+    0% {
+        box-shadow: 0 0 #EE612F;
+    }
+}
+
+.common_btn2:hover {
+    animation: pulsegardiant2 1s linear;
+    box-shadow: 0 0 0 0.7em transparent;
+}
+
+@keyframes pulsegardiant2 {
+    0% {
+        box-shadow: 0 0 white;
     }
 }

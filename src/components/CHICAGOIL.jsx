@@ -3,7 +3,10 @@ import React from "react";
 const CHICAGOIL = () => {
   return (
     <>
-      <div className="max-w-[1320px] px-3 mx-auto py-[60px] sm:pt-20 md:pt-32 sm:pb-[100px] md:pb-[166px] ">
+      <div
+        id="Speackers"
+        className="max-w-[1320px] px-3 mx-auto py-[60px] sm:pt-20 md:pt-32 sm:pb-[100px] md:pb-[166px] "
+      >
         <h2 className=" font-Poppins font-black text-[40px] sm:text-[50px] md:text-[60px] text-[#F59330] leading-[60px] sm:leading-[75px] md:leading-90px] text-center">
           MAY 16-18 – CHICAGO, IL
         </h2>
@@ -25,10 +28,10 @@ const CHICAGOIL = () => {
             <h2 className="text-white font-Poppins font-bold text-[30px]">
               $700
             </h2>
-            <button className=" font-Poppins font-normal text-2xl text-black leading-[36px] bg-white  rounded-[78px] py-3 sm:py-[17px] px-8 sm:px-[40px]  ms-5 me-4">
+            <button className=" font-Poppins font-normal text-2xl text-black leading-[36px] bg-white  rounded-[78px] py-3 sm:py-[17px] px-8 sm:px-[40px]  ms-5 me-4 hover:bg-[#EE612F] hover:text-white  duration-300 common_btn">
               EXPIRED
             </button>
-            <button className=" font-Poppins font-normal text-2xl text-white leading-[36px] bg-black  rounded-[78px] py-3 sm:py-[17px] px-8 sm:px-[55px] max-sm:w-full">
+            <button className=" font-Poppins font-normal text-2xl text-white leading-[36px] bg-black  rounded-[78px] py-3 sm:py-[17px] px-8 sm:px-[55px] max-sm:w-full hover:bg-white hover:text-black duration-300 common_btn2">
               VIEW SCHEDULE
             </button>
           </div>
