@@ -44,14 +44,14 @@ const HeroSection = () => {
           alt="HeroTopLeftEllipse"
         />
       </div>
-      <div className="w-[370px] lg:w-[500px] xl:w-[800px] 2xl:w-[1100px] absolute bottom-0 left-[-50%] sm:left-[-20%] md:left-0">
+      <div className="w-[370px] lg:w-[500px] xl:w-[800px] 2xl:w-[1100px] absolute bottom-0 left-[-50%] sm:left-[-20%] md:left-0 z-[-1]">
         <img
           className="w-full"
           src={HeroBottomLeftEllipse}
           alt="HeroBottomLeftEllipse"
         />
       </div>
-      <div className="w-[260px] lg:w-[650px] 2xl:w-[610px] absolute top-0 max-[500px]:right-[-31%] right-[-15%] md:right-[-10%] lg:right-[-13%] 2xl:right-0 ">
+      <div className="w-[260px] lg:w-[650px] 2xl:w-[610px] absolute top-[-3%] max-[500px]:right-[-31%] right-[-15%] md:right-[-10%] lg:right-[-13%] 2xl:right-0 ">
         <img
           className="w-full"
           src={HeroTopRightEllipse}
